@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "snipfile"
+version = "0.1.0"
+description = "A library for templating files into other files."
+authors = ["Ryan <user@4kelly.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+pep8-naming = "^0.12.1"
+isort = "^5.10.1"
+
+[tool.poetry.scripts]
+snipfile = "snipfile.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
